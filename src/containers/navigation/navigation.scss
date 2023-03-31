@@ -1,0 +1,57 @@
+.navigation-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  font-family: "Open Sans", sans-serif;
+  padding: 20px 47px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .logo {
+    padding: 0px 10%;
+    cursor: pointer;
+  }
+
+  &_nav_bar {
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    width: 650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+
+    &_item {
+      text-decoration: none;
+      color: #646464;
+
+      &:hover {
+        color: #212121;
+      }
+    }
+  }
+
+  &_reg {
+    padding-top: 10px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    padding-right: 63px;
+
+    a {
+      background: #CAA892;
+      border-radius: 15px 0px;
+      text-decoration: none;
+      color: #FFFFFF;
+      padding: 5px 19px;
+    }
+
+    &:hover {
+      filter: grayscale(25%);
+    }
+  }
+}
+
