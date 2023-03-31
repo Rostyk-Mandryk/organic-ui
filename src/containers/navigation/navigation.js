@@ -3,34 +3,47 @@ import "./navigation.scss";
 function Navigation() {
   return (
     <div className="navigation-container">
-      <div className="logo">
-      <img src='process.env.PUBLIC_URL/images/Logo.svg'/>
+      <div className="navigation-container_first">
+        <div className="navigation-container_first_logo">
+          <img src={`${process.env.PUBLIC_URL}/images/Logo.svg`} />
+        </div>
+        <div className="navigation-container_first_text">
+            Organick
+        </div>
       </div>
       <div className="navigation-container_nav_bar">
         <a className="navigation-container_nav_bar_item" href="#">
-          HOME
+          Home
         </a>
         <a className="navigation-container_nav_bar_item" href="#">
-          PROJECT
+          About
         </a>
         <a className="navigation-container_nav_bar_item" href="#">
-          SERVICES
+          Pages <img className="navigation-container_nav_bar_item_st" src={`${process.env.PUBLIC_URL}/images/st.svg`}/>
         </a>
         <a className="navigation-container_nav_bar_item" href="#">
-          ABOUT
+          Shop
         </a>
         <a className="navigation-container_nav_bar_item" href="#">
-          BLOG
+          Projects
         </a>
         <a className="navigation-container_nav_bar_item" href="#">
-          SHOP
-        </a>
-        <a className="navigation-container_nav_bar_item" href="#">
-          CONTACT
+          News
         </a>
       </div>
-      <div className="navigation-container_reg">
-        <a href="#">Sign up</a>
+      <div className="navigation-container_btn">
+        <div className="navigation-container_btn_search">
+          <input type="text" placeholder=" " />
+          <button>
+              <img src={`${process.env.PUBLIC_URL}/images/Vector.svg`} />
+          </button>
+        </div>
+        <div className="navigation-container_btn_basket">
+          <button>
+            <img src={`${process.env.PUBLIC_URL}/images/Icon.svg`}/>
+          </button>
+          <p>Cart (0)</p>
+        </div>
       </div>
     </div>
   );

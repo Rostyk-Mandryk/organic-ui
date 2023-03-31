@@ -3,7 +3,7 @@ import './explorePage.scss';
 
 function ExplorePage() {
     return (
-        <div className='explore-page-container'>ExplorePage</div>
+        <div className='explore-page-container'>ExplorePageсука</div>
     );
 }
 
