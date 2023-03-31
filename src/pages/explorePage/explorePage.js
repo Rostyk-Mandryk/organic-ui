@@ -3,7 +3,9 @@ import './explorePage.scss';
 
 function ExplorePage() {
     return (
-        <div className='explore-page-container'>ExplorePageсука</div>
+        <div style={{backgroundImage:`${process.env.PUBLIC_URL}/images/Banner.jpg`}}>
+            
+        </div>
     );
 }
 
