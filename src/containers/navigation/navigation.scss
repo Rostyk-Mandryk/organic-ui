@@ -1,9 +1,9 @@
 .navigation-container {
-  position: sticky;
   top: 0;
   z-index: 1000;
   background: rgba(255, 255, 255, 0.9);
-  padding: 75px 3%;
+  padding: 0px 3%;
+  padding-top: 75px;
   display: flex;
   flex-direction: row;
  &_first {

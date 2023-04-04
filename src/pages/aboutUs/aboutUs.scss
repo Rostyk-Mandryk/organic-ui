@@ -1,4 +1,118 @@
 .about-us-container {
-  color: blue;
-  font-family: 'Roboto';
+  padding-top: 0px;
+  background: #F9F8F8;
+
+  &_title {
+    display: flex;
+    flex-direction: row;
+
+    &_img {
+      img {
+        width: 700px;
+        height: 867px;
+      }
+
+    }
+
+    &_text {
+      padding-top: 200px;
+
+      &_about {
+        color: #7EB693;
+        font-family: 'Yellowtail', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 49px;
+      }
+
+      &_belive {
+        padding-top: 8px;
+        width: 702px;
+        height: 118px;
+        color: #274C5B;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 59px;
+      }
+
+      &_simply {
+        padding-top: 14px;
+        width: 690px;
+        height: 90px;
+        color: #525C60;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 165.4%;
+      }
+
+      &_group {
+        &_card {
+          padding-top: 30px;
+          display: flex;
+          flex-direction: row;
+
+          &_white {
+            width: 101px;
+            height: 101px;
+            background: #FFFFFF;
+            border-radius: 20px;
+
+            img {
+              padding: 25%
+            }
+          }
+
+          &_obj {
+            padding-left: 30px;
+
+            .organic {
+              color: #274C5B;
+              font-family: 'Roboto', sans-serif;
+              font-weight: 800;
+              font-size: 25px;
+              line-height: 29px;
+            }
+
+            .lorem {
+              width: 444px;
+              height: 60px;
+              color: #525C60;
+              font-family: 'Open Sans', sans-serif;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 165.4%;
+            }
+
+          }
+        }
+      }
+
+      &_low {
+        padding-top: 23px;
+
+
+
+        button {
+          border: none;
+          background: #274C5B;
+          border-radius: 16px;
+          padding: 28px 39px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 23px;
+          color: #FFFFFF;
+        }
+
+        .btn {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
 }
