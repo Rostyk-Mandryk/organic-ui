@@ -1,6 +1,7 @@
 .explore-container {
 
     &_content {
+        position: relative;
         padding-top: 100px;
         padding-left: 15%;
 
@@ -39,6 +40,16 @@
                 line-height: 23px;
                 color: #274C5B;
             }
+        }
+        
+    }
+    &_image {
+        img {
+            position: absolute;
+            right: 0px;
+            top: 300px;
+            width: 500px;
+       
         }
     }
 

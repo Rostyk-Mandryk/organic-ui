@@ -4,7 +4,7 @@ import "./explorePage.scss";
 function ExplorePage() {
   return (
     // <div style={{ height: 898, backgroundImage: `url(${process.env.PUBLIC_URL}/images/Background.png`}}/>
-    <div className="explore-container">
+    <div className="explore-container" style={{ height: 898, backgroundImage: `url(${process.env.PUBLIC_URL}/images/Background.png`}}>
       <div className="explore-container_content">
         <div className="explore-container_content_title">100% Natural Food</div>
         <div className="explore-container_content_description">
@@ -20,7 +20,7 @@ function ExplorePage() {
         </div>
       </div>
       <div className="explore-container_image">
-      {/* <img src={`${process.env.PUBLIC_URL}/images/Image.png`} /> */}
+      <img src={`${process.env.PUBLIC_URL}/images/glv.png`} />
       </div>
     </div>
   );
