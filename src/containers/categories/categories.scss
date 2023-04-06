@@ -1,3 +1,29 @@
 .categories-container {
-  color: blue;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 80px;
+  h1 {
+    display: flex;
+    justify-content: center;
+    color: #7EB693;
+    font-family: 'Yellowtail', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+  }
+  h2 {
+    display: flex;
+    justify-content: center;
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+font-size: 50px;
+line-height: 59px;
+  }
+  .product_card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
 }

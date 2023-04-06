@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './categories.scss';
 import { getProducts } from "../../api/dataApi";
+import Product from "../../components/product/product";
 
 function Categories() {
     const [showMore, setShowMore] = useState(false);
@@ -59,6 +60,20 @@ function Categories() {
     return (
         <div className='categories-container'>
             <h1>Categories</h1>
+            <h2>Our Products</h2>
+            <div className="product_card">
+                {productsInfo.map(({ name, price, priceBeforeDiscount, stars, type }) => (
+                    <div>
+                        <Product
+                            name={name}
+                            price={price}
+                            priceBeforeDiscount={priceBeforeDiscount}
+                            stars={stars}
+                            type={type}
+                        />
+                    </div>
+                ))}
+            </div>
             <button onClick={() => setShowMore(!showMore)}>Load more</button>
         </div>
     );
