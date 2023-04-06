@@ -1,8 +1,8 @@
 import React from 'react';
 import Star from './star';
+import PropTypes from "prop-types";
 
-const App = () => {
-  const stars = 5;
+const Stars = ({stars}) => {
   const starArray = new Array(stars).fill(0);
 
   return (
@@ -14,4 +14,8 @@ const App = () => {
   );
 };
 
-export default App;
+Stars.propTypes = {
+  stars: PropTypes.number
+};
+
+export default Stars;

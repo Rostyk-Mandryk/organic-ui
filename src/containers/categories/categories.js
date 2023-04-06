@@ -45,26 +45,24 @@ function Categories() {
     }, [showMore, areAllProductsLoaded]);
 
     if (hasError) {
-        // Build some error page with JSX/SCSS
         return 'Build some Error page component and return it here';
     }
 
     if (isDataLoading) {
-        // Draw some spinner with JSX/SCSS
         return 'Spinner';
     }
 
     console.log({productsInfo});
-    // products info - your DATA to render in JSX
 
     return (
         <div className='categories-container'>
             <h1>Categories</h1>
             <h2>Our Products</h2>
             <div className="product_card">
-                {productsInfo.map(({ name, price, priceBeforeDiscount, stars, type }) => (
+                {productsInfo.map(({ name, price, priceBeforeDiscount, stars, type, id }) => (
                     <div>
                         <Product
+                            id={id}
                             name={name}
                             price={price}
                             priceBeforeDiscount={priceBeforeDiscount}

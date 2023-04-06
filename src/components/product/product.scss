@@ -11,7 +11,13 @@
         border-width: 0.5px;
         border-style: solid;
         width: 75%;
-      }
+    }
+
+    .prod-image {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
       
     .type {
         margin: 20px;
@@ -36,7 +42,7 @@
         line-height: 23px;
         display: flex;
         justify-content: center;
-        padding-top: 77%;
+        padding-top: 30px;
     }
     .pr {
         display: flex;
@@ -65,4 +71,10 @@
             padding-top: 3px;
         }
     }
+}
+
+.Products-Modal {
+    margin: 200px auto 0;
+    width: 300px;
+    height: 400px;
 }
