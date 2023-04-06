@@ -6,8 +6,15 @@
     background: #F9F8F8;
     border-radius: 30px;
     margin: 10px;
-
+    .my-line {
+        border-color: silver;
+        border-width: 0.5px;
+        border-style: solid;
+        width: 75%;
+      }
+      
     .type {
+        margin: 20px;
         background: #274C5B;
         border-radius: 8px;
         padding: 6px 12px;
@@ -19,8 +26,6 @@
         line-height: 20px;
         text-align: center;
         color: #FFFFFF;
-        margin-top: 35px;
-        margin-left: 35px;
     }
 
     .name {
@@ -29,22 +34,35 @@
         font-weight: 600;
         font-size: 20px;
         line-height: 23px;
+        display: flex;
+        justify-content: center;
+        padding-top: 77%;
     }
-
-    .price {
-        color: #274C5B;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 25px;
-    }
-
-    .priceBefore {
-        color: #B8B8B8;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 20px;
-        text-decoration: line-through;
+    .pr {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 8%;
+        padding-right: 8%;
+        &_price {
+            color: #274C5B;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+        }
+    
+        &_priceBefore {
+            padding-top: 3px;
+            color: #B8B8B8;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+            text-decoration: line-through;
+        }
+        &_stars {
+            padding-top: 3px;
+        }
     }
 }

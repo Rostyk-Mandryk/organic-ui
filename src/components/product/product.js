@@ -15,8 +15,8 @@ function Product({ name, price, priceBeforeDiscount, stars, type }) {
                 onRequestClose={() => setIsModalOpen(false)}
                 contentLabel="Products Information"
             >
-                <button onClick={() => setIsModalOpen(false)}>close</button>
-                <span>name: {name} || </span>
+                <button onClick={() => setIsModalOpen(false)}>X</button>
+                <span>asddadas: {name} || </span>
                 <span>price: {price} || </span>
                 <span>priceBeforeDiscount: {priceBeforeDiscount} || </span>
                 <span>stars: {stars} || </span>
@@ -29,9 +29,12 @@ function Product({ name, price, priceBeforeDiscount, stars, type }) {
         <div className="card_veg" onClick={() => setIsModalOpen(true)}>
             <span className="type">{type}</span>
             <span className="name">{name}</span> 
-            <span className="price">${price}.00</span>
-            <span className="priceBefore">${priceBeforeDiscount}.00</span>
-            <span className="stars"><Stars /></span>
+            <hr className="my-line" />
+            <div className="pr">
+            <span className="pr_priceBefore">${priceBeforeDiscount}.00</span>
+            <span className="pr_price">${price}.00</span>
+            <span className="pr_stars"><Stars /></span>
+            </div>
         </div>
     )
 }
