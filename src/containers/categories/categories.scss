@@ -2,6 +2,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 80px;
+
   h1 {
     display: flex;
     justify-content: center;
@@ -11,19 +12,37 @@
     font-size: 36px;
     line-height: 49px;
   }
+
   h2 {
     display: flex;
     justify-content: center;
     color: #274C5B;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
-font-size: 50px;
-line-height: 59px;
+    font-size: 50px;
+    line-height: 59px;
   }
-  .product_card{
+
+  .product_card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
+
+  }
+
+  .btn_more {
+    border: none;
+    background: #274C5B;
+    border-radius: 16px;
+    padding: 28px 39px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    img {
+      padding-left: 20px;
+    }
   }
 }

@@ -74,7 +74,10 @@ function Categories() {
                     </div>
                 ))}
             </div>
-            <button onClick={() => setShowMore(!showMore)}>Load more</button>
+            <button className="btn_more" onClick={() => setShowMore(!showMore)}>Load more <img
+              className="btn"
+              src={`${process.env.PUBLIC_URL}/images/Aerrow.svg`}
+            /></button>
         </div>
     );
 }
